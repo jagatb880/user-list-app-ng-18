@@ -4,8 +4,6 @@ import { RouterLink } from '@angular/router';
 import { CommonModule, NgFor, NgIf } from '@angular/common';
 import { HeaderComponent } from '../header/header.component';
 import { MatIconModule } from '@angular/material/icon';
-import { MatCardModule } from '@angular/material/card';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'app-user-list',
@@ -16,9 +14,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     NgFor,
     NgIf,
     HeaderComponent,
-    MatIconModule,
-    MatCardModule,
-    MatProgressSpinnerModule,
+    MatIconModule
   ],
   templateUrl: './user-list.component.html',
   styleUrl: './user-list.component.css',
