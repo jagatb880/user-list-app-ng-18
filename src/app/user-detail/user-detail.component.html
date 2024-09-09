@@ -1,0 +1,16 @@
+
+  
+<div *ngIf="loading" class="loading-overlay">
+    <div class="loader"></div>
+  </div>
+  
+<div *ngIf="!loading && userNotFound" class="no-user-found">
+    <mat-icon>error_outline</mat-icon>
+    <p>No user found</p>
+  </div>
+
+<div *ngIf="!loading" class="container">
+  <img [src]="user.avatar" alt="{{user?.first_name}}">
+  <h3>{{user?.first_name}} {{user?.last_name}}</h3>
+  <p>ID: {{user.id}}</p>
+</div>

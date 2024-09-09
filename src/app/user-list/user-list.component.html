@@ -1,0 +1,18 @@
+
+<div class="user-list">
+    <div *ngIf="loading" class="loading">Loading...</div>
+
+    <div *ngIf="!loading" class="user-card">
+        <div *ngFor="let user of users">
+            <img [src]="user.avatar" alt="{{user?.first_name}}">
+            <h3>{{user?.first_name}} {{user?.last_name}}</h3>
+            <a [routerLink]="['/user_details', user.id]">View Details</a>
+        </div>
+    </div>
+    <div *ngIf="!loading && userNotFound" class="no-user-found">
+        <mat-icon>error_outline</mat-icon>
+        <p>No further page found</p>
+      </div>
+    <button (click)="prevPage()" [disabled]="page === 1">Previous</button>
+    <button *ngIf="!loading && !userNotFound" (click)="nextPage()">Next</button>
+</div>

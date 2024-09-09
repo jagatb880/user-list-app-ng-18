@@ -1,0 +1,38 @@
+.no-user-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .no-user-found mat-icon {
+    font-size: 50px;
+    color: #f44336;
+  }
+  
+  .no-user-found p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #757575; 
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .user-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .mat-icon{
+    height: 50px !important;
+    width: 50px !important;
+  }
