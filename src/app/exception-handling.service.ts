@@ -1,7 +1,11 @@
 import { HttpErrorResponse } from "@angular/common/http";
 import { LoggerService } from "./logger.service";
 import { NotificationService } from "./notification.service";
+import { Injectable } from "@angular/core";
 
+@Injectable({
+  providedIn: 'root'  // This ensures that the service is available globally
+})
 export class ExceptionHandlingService {
   
   constructor(private loggerService: LoggerService, private notificationService: NotificationService) {}

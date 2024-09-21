@@ -1,3 +1,8 @@
+import { Injectable } from "@angular/core";
+
+@Injectable({
+  providedIn: 'root'  // This ensures that the service is available globally
+})
 export class LoggerService {
   
   logError(error: any): void {
